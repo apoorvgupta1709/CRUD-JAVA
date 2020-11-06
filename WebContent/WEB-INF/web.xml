@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>SQLimpl</display-name>
+
+  
+   
+  <servlet>
+        <servlet-name>loginDo</servlet-name>
+        <servlet-class>code.loginDO</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginDo</servlet-name>
+        <url-pattern>/loginDO</url-pattern>
+    </servlet-mapping>
+    
+      <servlet>
+        <servlet-name>signUp</servlet-name>
+        <servlet-class>code.signUp</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signUp</servlet-name>
+        <url-pattern>/signUp</url-pattern>
+    </servlet-mapping>
+  
+     <servlet>
+        <servlet-name>implement</servlet-name>
+        <servlet-class>code.implement</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>implement</servlet-name>
+        <url-pattern>/implement</url-pattern>
+    </servlet-mapping>
+    
+    
+       <servlet>
+        <servlet-name>ServletFirst</servlet-name>
+        <servlet-class>Servlet_Impl.ServletFirst</servlet-class>
+        
+    <init-param>  
+      <param-name>first</param-name>  
+      <param-value>User</param-value>  
+    </init-param>  
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletFirst</servlet-name>
+        <url-pattern>/ServletFirst</url-pattern>
+    </servlet-mapping>
+    
+    
+     <context-param>  
+    <param-name>Driver</param-name>  
+    <param-value>com.mysql.jdbc.Driver</param-value>  
+  </context-param>  
+  
+   <welcome-file-list>  
+   <welcome-file>ServletRegister.html</welcome-file>  
+  </welcome-file-list>  
+    
+    
+     <servlet>
+        <servlet-name>Sum</servlet-name>
+        <servlet-class>filter.ServletSum</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Sum</servlet-name>
+        <url-pattern>/ServletSum</url-pattern>
+    </servlet-mapping>
+  
+    
+    
+    
+    
+    
+    
+  
+</web-app>
