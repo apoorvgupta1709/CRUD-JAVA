@@ -33,8 +33,8 @@ public class Show extends HttpServlet {
 			Statement ps=con.createStatement();
 			String Querry="Select * from dataStore";
 			ResultSet i=ps.executeQuery(Querry);
-			pw.print("<h2>Record updated successful</h2> </br></br>");
-			pw.print("<meta http-equiv=\"refresh\" content=\"3;url=Update.html”/>");
+			pw.print("<h2>Record update successful</h2> </br></br>");
+			pw.print("<meta http-equiv=\"refresh\" content=\"3;url=Update.htmlâ€/>");
 			while(i.next())
 			{
 				pw.print(i.getString(1)+ "\t" +i.getString(2)+ "\t"+i.getString(3)+ "\t"+i.getString(4)+ "</br>");
