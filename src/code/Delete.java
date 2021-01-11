@@ -46,7 +46,7 @@ public class Delete extends HttpServlet {
 			}
 			else
 			{
-				pw.print("Details not exist in Table");
+				pw.print("Try Again! Details not exist in Table");
 				request.getRequestDispatcher("Delete.html").include(request, response);
 			}
 			
